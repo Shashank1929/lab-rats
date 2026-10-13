@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0f172a" />
+    <title>Movie Mystery Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section id="start-screen" class="screen start-screen active">
+        <div class="logo">🎬</div>
+        <p class="eyebrow">Movie Challenge</p>
+        <h1>Movie Mystery</h1>
+        <p class="subtitle">
+          Guess the movie from the clue. 5 rounds. Quick, fun, and addictive.
+        </p>
+        <button id="start-btn" class="primary-btn">Play Now</button>
+      </section>
+
+      <section id="quiz-screen" class="screen quiz-screen hidden">
+        <div class="quiz-card">
+          <div class="topbar">
+            <span class="tag">🎬 Quiz</span>
+            <span id="progress">Question 1 / 5</span>
+          </div>
+
+          <div class="score-pill">
+            <span>Score</span>
+            <strong id="score">0</strong>
+          </div>
+
+          <p class="label">Clue</p>
+          <h2 id="clue" class="clue"></h2>
+
+          <div id="options" class="options" aria-live="polite"></div>
+
+          <div id="feedback" class="feedback hidden"></div>
+
+          <div class="button-row">
+            <button id="next-btn" class="primary-btn hidden">Next Question</button>
+            <button id="restart-btn" class="secondary-btn hidden">Play Again</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
